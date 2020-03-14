@@ -1,72 +1,72 @@
 <template lang="pug">
 section
   h2 配布可能曲リスト
-    el-table(:data="tableData" style="width: 100%")
-      el-table-column(type="expand")
-        template(slot-scope="props")
-          p State: {{ props.row.state }}
-          p City: {{ props.row.city }}
-          p Address: {{ props.row.address }}
-          p Zip: {{ props.row.zip }}
-      el-table-column(label="Date" prop="date")
-      el-table-column(label="Name" prop="name")
+  el-table(:data="tableData1" style="width: 100%")
+    el-table-column(type="expand")
+      template(slot-scope="props")
+        p(v-if="props.row.note") {{ props.row.note }}
+        p 配信：{{ props.row.candl }}
+        p(v-if="props.row.url") 視聴：
+          a(:href="props.row.url" target="_blank" rel="noopener") {{ props.row.sitename }}
+    el-table-column(label="曲名" prop="name")
+    el-table-column(label="アーティスト" prop="artist")
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        tableData: [{
-          date: '2016-05-03',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-02',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-04',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-01',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-08',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-06',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }, {
-          date: '2016-05-07',
-          name: 'Tom',
-          state: 'California',
-          city: 'Los Angeles',
-          address: 'No. 189, Grove St, Los Angeles',
-          zip: 'CA 90036'
-        }]
-      }
+export default {
+  data() {
+    return {
+      tableData1: [{
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/28635',
+        sitename: 'スッポン放送'
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: '',
+        sitename: ''
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: '',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/87779',
+        sitename: 'スッポン放送'
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/87779',
+        sitename: 'スッポン放送'
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/87779',
+        sitename: 'スッポン放送'
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/87779',
+        sitename: 'スッポン放送'
+      }, {
+        name: '惡の華―春日高男―',
+        artist: '宇宙人・の子',
+        note: 'アニメ「惡の華」OP',
+        candl: 'あり',
+        url: 'http://9129suppon.com/music/anison/87779',
+        sitename: 'スッポン放送'
+      }]
     }
   }
+}
 </script>
