@@ -33,7 +33,7 @@ export default {
   padding 20px
   max-width 900px
 
-.ttl_2
+h2
   font-weight bold
   font-size 15px
   border-style solid
@@ -51,6 +51,8 @@ export default {
     margin-right -300px
     float left
     > div
+      margin-right 300px
+    section
       margin-right 300px
   aside
     display block
