@@ -7,7 +7,7 @@ footer
 footer
   margin 3em 0 0
   padding 1em
-  p
-    text-align center
-    font-size 12px
+p
+  text-align center
+  font-size 12px
 </style>
