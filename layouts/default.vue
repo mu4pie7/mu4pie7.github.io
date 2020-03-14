@@ -1,55 +1,63 @@
-<template>
-  <div>
-    <nuxt />
+<template lang="pug">
+  div
+    Header
+    .container
+      .main
+        nuxt
+      SideMenu
+    Footer
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import Header from '~/components/Header.vue'
+import SideMenu from '~/components/SideMenu.vue'
+import Footer from '~/components/Footer.vue'
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+export default {
+  components: {
+    Header,
+    SideMenu,
+    Footer
+  }
 }
+</script>
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+<style lang="stylus">
+*
+  margin 0
+  padding 0
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.container
+  margin 0 auto
+  padding 20px
+  max-width 900px
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+.ttl_2
+  font-weight bold
+  font-size 15px
+  border-style solid
+  border-width 1px 1px 1px 5px
+  border-color #eee #ddd #eee #ff6
+  padding 0.5em 1em
+  margin 2em 0 1em -10px
+  background-color #fff
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+@media screen and (min-width: 768px)
+  .main
+    display block
+    vertical-align top
+    width 100%
+    margin-right -300px
+    float left
+    > div
+      margin-right 300px
+  aside
+    display block
+    vertical-align top
+    width 250px
+    float right
+  footer
+    clear both
+
 </style>
