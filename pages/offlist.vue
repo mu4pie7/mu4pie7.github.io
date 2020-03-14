@@ -458,6 +458,18 @@ export default {
         note: '入賞&CD収録',
         url: 'https://youtu.be/HpGLCCpvV-E'
       }, {
+        name: 'おわらない想い',
+        theme: 'ありがとう（公式）',
+        candl: false,
+        note: 'みゅー＆みすと',
+        url: 'https://youtu.be/M35CrXfQbWU'
+      }, {
+        name: '春の雨',
+        theme: 'ありがとう（公式）',
+        candl: false,
+        note: '',
+        url: 'https://youtu.be/cebxZDJQKs8'
+      }, {
         name: 'Say Say Do Do!',
         theme: 'アイカレ（公式）',
         candl: false,
