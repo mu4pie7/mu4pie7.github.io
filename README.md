@@ -20,3 +20,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## deploy
+```
+$ git checkout nuxt-master
+$ npm run generate
+$ git commit -m 'hoge'
+$ git subtree push --prefix dist/ origin master
