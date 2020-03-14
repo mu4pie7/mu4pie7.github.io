@@ -13,6 +13,7 @@ export default {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@4piE_7' },
       { name: 'twitter:creator', content: '@4piE_7' },
+      { property: 'og:title', content: 'みゅーさんのぺーじ' },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: '/img/icon.png' }
     ],

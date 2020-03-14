@@ -54,7 +54,8 @@ export default {
     return {
       title: '配布可能曲リスト | みゅーさんのぺーじ',
       meta: [
-        { hid: 'description', name: 'description', content: 'みゅーさんがつくったバンブラであげられるデータです。' }
+        { hid: 'description', name: 'description', content: 'みゅーさんがつくったバンブラであげられるデータです。' },
+        { property: 'og:title', content: '配布可能曲リスト | みゅーさんのぺーじ' },
       ]
     }
   },

@@ -72,7 +72,8 @@ export default {
     return {
       title: 'プロフィール | みゅーさんのぺーじ',
       meta: [
-        { hid: 'description', name: 'description', content: 'みゅーさんがバンブラでやってきたことです。' }
+        { hid: 'description', name: 'description', content: 'みゅーさんがバンブラでやってきたことです。' },
+        { property: 'og:title', content: 'プロフィール | みゅーさんのぺーじ' },
       ]
     }
   }
