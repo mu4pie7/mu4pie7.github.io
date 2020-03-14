@@ -36,3 +36,16 @@ a
   padding 0.5em 3%
   width 94%
 </style>
+
+<script>
+export default {
+  head () {
+    return {
+      title: 'みゅーさんのぺーじ',
+      meta: [
+        { hid: 'description', name: 'description', content: 'バーバラさまのしもべ、みゅーさんのページです。' }
+      ]
+    }
+  }
+}
+</script>

@@ -50,6 +50,14 @@ p
 <script>
 
 export default {
+  head () {
+    return {
+      title: '配布可能曲リスト | みゅーさんのぺーじ',
+      meta: [
+        { hid: 'description', name: 'description', content: 'みゅーさんがつくったバンブラであげられるデータです。' }
+      ]
+    }
+  },
   methods: {
     rowClicked1(row) {
       this.$refs.tableData1.toggleRowExpansion(row);
