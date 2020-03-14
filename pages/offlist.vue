@@ -2,7 +2,7 @@
 section
   h2 配布可能曲リスト
   h3 原曲再現系
-  el-table(:data="tableData1" style="width: 100%")
+  el-table(:data="tableData1" height="400" style="width: 100%" @row-click="rowClicked1" ref="tableData1" class="clickable-rows")
     el-table-column(type="expand")
       template(slot-scope="props")
         p(v-if="props.row.note") {{ props.row.note }}
@@ -13,7 +13,7 @@ section
     el-table-column(label="曲名" prop="name")
     el-table-column(label="アーティスト" prop="artist" sortable)
   h3 アレンジ
-  el-table(:data="tableData2" style="width: 100%")
+  el-table(:data="tableData2" style="width: 100%" @row-click="rowClicked2" ref="tableData2" class="clickable-rows")
     el-table-column(type="expand")
       template(slot-scope="props")
         p(v-if="props.row.note") {{ props.row.note }}
@@ -22,9 +22,9 @@ section
         p(v-if="props.row.url")
           a(:href="props.row.url" target="_blank" rel="noopener") 試聴
     el-table-column(label="曲名" prop="name")
-    el-table-column(label="アーティスト" prop="artist" sortable)
+    el-table-column(label="アーティスト" prop="artist")
   h3 オリジナル
-  el-table(:data="tableData3" style="width: 100%")
+  el-table(:data="tableData3" height="400" style="width: 100%" @row-click="rowClicked3" ref="tableData3" class="clickable-rows")
     el-table-column(type="expand")
       template(slot-scope="props")
         p(v-if="props.row.note") {{ props.row.note }}
@@ -36,8 +36,31 @@ section
     el-table-column(label="テーマ" prop="theme" sortable)
 </template>
 
+<style lang="stylus">
+.clickable-rows
+  color #000
+  tbody tr td
+    cursor pointer
+  .el-table__expanded-cell
+    cursor default
+p
+  line-height 2em
+</style>
+
 <script>
+
 export default {
+  methods: {
+    rowClicked1(row) {
+      this.$refs.tableData1.toggleRowExpansion(row);
+    },
+    rowClicked2(row) {
+      this.$refs.tableData2.toggleRowExpansion(row);
+    },
+    rowClicked3(row) {
+      this.$refs.tableData3.toggleRowExpansion(row);
+    }
+  },
   data() {
     return {
       tableData1: [{
@@ -269,7 +292,7 @@ export default {
         note: 'ゲーム「UNDERTALE」BGM',
         url: 'https://soundcloud.com/4pie_7/heartachebbp'
       }, {
-        name: 'マイブラスター（It&#x27;s my blaster!）［sasakure.UK Remix］',
+        name: 'マイブラスター（It’s my blaster!）［sasakure.UK Remix］',
         artist: 'sasakure.UK',
         candl: false,
         note: 'ゲーム「ケロブラスター」BGM リミックス版',
