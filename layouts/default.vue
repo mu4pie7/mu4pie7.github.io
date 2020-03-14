@@ -42,6 +42,12 @@ h2
   padding 0.5em 1em
   margin 2em 0 1em -10px
   background-color #fff
+h3
+  font-weight bold
+  font-size 14px
+  border-bottom 1px dashed #aaa
+  padding 0.5em 1em
+  margin 2em 0
 
 @media screen and (min-width: 768px)
   .main

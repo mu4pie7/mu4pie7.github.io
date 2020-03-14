@@ -47,6 +47,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
-  }
+    },
+    vendor: ['element-ui'],
+  },
+  plugins: [
+    '~plugins/element-ui'
+  ],
+  css: [
+    'element-ui/lib/theme-chalk/index.css'
+  ] 
 }
