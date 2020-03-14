@@ -15,7 +15,7 @@ export default {
       { name: 'twitter:creator', content: '@4piE_7' },
       { property: 'og:title', content: 'みゅーさんのぺーじ' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: '/img/icon.png' }
+      { property: 'og:image', content: 'https://mu4pie7.github.io/img/icon.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/img/icon.png' }
