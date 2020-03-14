@@ -1,16 +1,17 @@
 {
   "name": "mu4pie7-nuxt",
   "version": "1.0.0",
+  "private": true,
   "description": "My tiptop Nuxt.js project",
   "author": "mu4pie7",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
+    "element-ui": "^2.3.6",
     "nuxt": "^2.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
@@ -18,5 +19,7 @@
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vue-cli-plugin-element-ui": "~1.1.4"
+  }
 }
