@@ -65,3 +65,16 @@ dd
   list-style-position inside
   padding-left 1em
 </style>
+
+<script>
+export default {
+  head () {
+    return {
+      title: 'プロフィール | みゅーさんのぺーじ',
+      meta: [
+        { hid: 'description', name: 'description', content: 'みゅーさんがバンブラでやってきたことです。' }
+      ]
+    }
+  }
+}
+</script>

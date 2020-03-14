@@ -1,7 +1,7 @@
 <template lang="pug">
 header
-  n-link(to="/")
-    h1
+  h1
+    n-link(to="/")
       img(src="/img/logo.png" alt="(・μ・)みゅーさんのぺーじ")
 </template>
 
