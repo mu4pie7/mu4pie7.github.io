@@ -1,62 +1,38 @@
-<template>
-<div>
-  <logo />
-  <h1 class="title">
-    mu4pie7-nuxt
-  </h1>
-  <h2 class="subtitle">
-    My tiptop Nuxt.js project
-  </h2>
-  <div class="links">
-    <a
-      href="https://nuxtjs.org/"
-      target="_blank"
-      class="button--green"
-    >
-      Documentation
-    </a>
-    <a
-      href="https://github.com/nuxt/nuxt.js"
-      target="_blank"
-      class="button--grey"
-    >
-      GitHub
-    </a>
-  </div>
-</div>
+<template lang="pug">
+section
+  h2 Menu
+  dl
+    dt
+      n-link(to="/profile") プロフィール
+    dd いろんなことがありました
+    dt
+      n-link(to="/offlist") 配布可能曲リスト
+    dd バンブラオフ用の曲リストです
+    dt
+      a(href="https://note.mu/mu4pie_7" target="_blank" rel="noopener") 不定期ブログ
+    dd noteになりました
+  h2 New!
+  a.twitter-timeline(data-lang="ja" data-width="600" data-height="800" href="https://twitter.com/info_myu?ref_src=twsrc%5Etfw") Tweets by info_myu
+  script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<style scoped lang="stylus">
+dt
+  border-top 2px dotted #ddd
+  border-bottom 2px dotted #ddd
+dt:hover
+  background-color #eee
 
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
+dd
+  padding 0.5em 0 0.5em 2em
+dd:last-child
+  border-bottom 2px dotted #ddd
 
-<style>
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+a
+  text-decoration none
+  color #666
+  font-weight bold
+  display inline-block
+  padding 0.5em 3%
+  width 94%
 </style>
