@@ -107,7 +107,7 @@ export default {
         artist: 'YMCK',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/143090'
+        url: 'https://youtu.be/q0H-ZTF-JE4'
       }, {
         name: '大きな玉ねぎの下で',
         artist: '爆風スランプ',
@@ -163,11 +163,17 @@ export default {
         note: '',
         url: 'http://9129suppon.com/music/jpop/13429'
       }, {
+        name: 'タルタル山脈',
+        artist: '石川こずえ',
+        candl: false,
+        note: 'ゼルダの伝説 夢をみる島 Switch版',
+        url: 'https://youtu.be/bo56rY5MXbA'
+      }, {
         name: '天文学的なその数から',
         artist: '神聖かまってちゃん',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/144909'
+        url: 'https://youtu.be/1vCdNoUnEM4'
       }, {
         name: '都会のアリス',
         artist: 'アーバンギャルド',
@@ -179,7 +185,7 @@ export default {
         artist: '中村 中',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/116585'
+        url: 'https://youtu.be/V0PkWfWjD_M'
       }, {
         name: 'はじまり',
         artist: '木下牧子',
@@ -197,13 +203,13 @@ export default {
         artist: 'sasakure.UK',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/138003'
+        url: 'https://youtu.be/35J4sh7tSl8'
       }, {
         name: 'ヒカリノアトリエ',
         artist: 'Mr.Children',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/117960'
+        url: 'https://youtu.be/ppokVWzEWr8'
       }, {
         name: 'フェアルーン2 アオの神殿',
         artist: 'ユウラボ',
@@ -233,13 +239,13 @@ export default {
         artist: 'ヒゲドライバー',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/150949'
+        url: 'https://youtu.be/ouWPt9wsCXE'
       }, {
         name: 'マリィの世界',
         artist: 'sasakure.UK',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/127997'
+        url: 'https://youtu.be/JXDS_uNAfSc'
       }, {
         name: '回ル想ヒ',
         artist: 'sasakure.UK',
@@ -257,7 +263,19 @@ export default {
         artist: '爆風スランプ',
         candl: false,
         note: '',
-        url: 'https://creofuga.net/audios/94529'
+        url: 'https://youtu.be/5i53BFy7AXw'
+      }, {
+        name: 'ゆーれいみマン',
+        artist: '神聖かまってちゃん',
+        candl: false,
+        note: '',
+        url: 'https://youtu.be/iXV_55B7udQ'
+      }, {
+        name: '夢みたあとで',
+        artist: 'GARNET CROW',
+        candl: false,
+        note: '',
+        url: 'https://youtu.be/ZRIQTfxlHdY'
       }, {
         name: 'ロックンロールは鳴り止まないっ',
         artist: '神聖かまってちゃん',
@@ -281,7 +299,7 @@ export default {
         artist: 'リコ(富田美憂)\nレグ(伊瀬茉莉也)',
         candl: false,
         note: 'アニメ「メイドインアビス」OP',
-        url: 'https://creofuga.net/audios/133728'
+        url: 'https://youtu.be/UIiQB0tx_hs'
       }, {
         name: 'Dogsong',
         artist: 'toby fox',
@@ -293,7 +311,7 @@ export default {
         artist: 'Daisuke Minamizawa',
         candl: false,
         note: 'ゲーム「CHUNISM」（原曲:パカパカパッション）',
-        url: 'https://creofuga.net/audios/149691'
+        url: 'https://youtu.be/4URCumva0kU'
       }, {
         name: 'Heartache',
         artist: 'toby fox',
@@ -301,11 +319,11 @@ export default {
         note: 'ゲーム「UNDERTALE」BGM',
         url: 'https://soundcloud.com/4pie_7/heartachebbp'
       }, {
-        name: 'マイブラスター（It’s my blaster!）［sasakure.UK Remix］',
+        name: 'It’s my blaster!［sasakure.UK Remix］',
         artist: 'sasakure.UK',
         candl: false,
         note: 'ゲーム「ケロブラスター」BGM リミックス版',
-        url: 'https://creofuga.net/audios/150129'
+        url: 'https://youtu.be/XKYT9PH9tkw'
       }, {
         name: 'musicpoolに溺れたい',
         artist: 'プラグラムハッチ',
@@ -353,13 +371,13 @@ export default {
         artist: 'みそか',
         candl: false,
         note: 'ゲーム「神巫女」BGM',
-        url: 'https://creofuga.net/audios/168137'
+        url: 'https://youtu.be/wAcmRkiA9wA'
       }, {
         name: 'ukigumo',
         artist: 'ヒゲドライバー',
         candl: false,
         note: '10th Anniversary Best 版',
-        url: 'https://creofuga.net/audios/168006'
+        url: 'https://youtu.be/MVX9j2YHHh4'
       }, {
         name: 'You Can Be a Star',
         artist: 'YMCK',

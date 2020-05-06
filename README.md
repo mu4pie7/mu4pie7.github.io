@@ -22,9 +22,14 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## deploy
+- push chenges:
 ```bash
 $ git checkout nuxt-master
 $ npm run generate
 $ git commit -m 'hoge'
-$ git subtree push --prefix dist/ origin master
+$ git push origin nuxt-master
+$ git subtree push --prefix dist origin foo
 ```
+- create PR: foo to master
+- resolve conflict
+- merge PR
