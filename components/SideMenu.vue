@@ -7,13 +7,9 @@ aside
         img(src="/img/tw.png" alt="Twitter")
         span Twitter
     li
-      a.yt(href="https://www.youtube.com/playlist?list=PL5Uku-bQd6ZkON1DDkNYeyLkQsmS13vdw" target="_blank" rel="noopener")
+      a.yt(href="https://www.youtube.com/channel/UCYRQlMg_XdC0MasD3241ntw" target="_blank" rel="noopener")
         img(src="/img/yt.png" alt="YouTube")
         span YouTube
-    li
-      a.cf(href="https://creofuga.net/4pie-7" target="_blank" rel="noopener")
-        img(src="/img/cf.png" alt="CREOFUGA")
-        span CREOFUGA
     li
       a.nc(href="http://www.nicovideo.jp/mylist/41584291" target="_blank" rel="noopener")
         img(src="/img/nc.png" alt="niconico")
